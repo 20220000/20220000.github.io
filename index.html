@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de texto</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <main>
+
+            <h1 class="logo">
+                <img src="imagenes/Logo.png" alt="LOGO ALURA">
+            </h1>
+    
+            <div class="texto-encriptar">
+                <textarea class="input-texto-encriptar" type="text" onclick="clearText();" onblur="restoreText();"> </textarea>
+            </div>
+    
+            <section class="barra-lateral">
+                <div class="barra-lateral-imagen">
+                    <img src="imagenes/Muñeco.png" alt=""> 
+                </div>
+                
+                <div class="barra-lateral-mensaje">
+                    <h2 id="titulo-encriptacion"></h2>
+                    <p id="mensaje-encriptado"></p>
+                </div>
+            </section>
+
+            <div class="mensaje-botones">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                  </svg> Solo letras minisculas y sin acentos</p>
+            </div>
+            
+            <section class="botones">
+                <button id="boton-encriptar" onclick="botonEncriptar();">Encriptar</button>
+                <button id="boton-desencriptar" onclick="botonDesencriptar();">Desencriptar</button>
+            </section>
+
+        </main>
+    
+        <script src="app.js" defer></script>
+        
+    </body>
+</html>
